@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2774A00D9EDECAF6A4A56DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283DE5BD7FFAE40F17A4CCA7 /* OnboardingViewController.swift */; };
+		C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */; };
+		CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */; };
 		D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52E227E1006A00E1563E /* AppDelegate.swift */; };
-		D7DB52E527E1006A00E1563E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52E427E1006A00E1563E /* SceneDelegate.swift */; };
-		D7DB52E727E1006A00E1563E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52E627E1006A00E1563E /* ViewController.swift */; };
 		D7DB52EA27E1006A00E1563E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52E827E1006A00E1563E /* Main.storyboard */; };
 		D7DB52EC27E1006F00E1563E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52EB27E1006F00E1563E /* Assets.xcassets */; };
 		D7DB52EF27E1006F00E1563E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52ED27E1006F00E1563E /* LaunchScreen.storyboard */; };
+		D7DB52FB27E1013000E1563E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52FA27E1012F00E1563E /* AppCoordinator.swift */; };
+		D7DB52FF27E101A300E1563E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52FE27E101A300E1563E /* Observable.swift */; };
+		D7DB530227E10AD100E1563E /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB530027E10AD100E1563E /* UIView + Extensions.swift */; };
+		D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		283DE5BD7FFAE40F17A4CCA7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
+		7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		D7DB52DF27E1006A00E1563E /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DB52E227E1006A00E1563E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7DB52E427E1006A00E1563E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D7DB52E627E1006A00E1563E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7DB52E927E1006A00E1563E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7DB52EB27E1006F00E1563E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7DB52EE27E1006F00E1563E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7DB52F027E1006F00E1563E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DB52FA27E1012F00E1563E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		D7DB52FE27E101A300E1563E /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		D7DB530027E10AD100E1563E /* UIView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AA505780DF89B4AEE432D54F /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				283DE5BD7FFAE40F17A4CCA7 /* OnboardingViewController.swift */,
+				7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */,
+				6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		D7DB52D627E1006A00E1563E = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +76,66 @@
 		D7DB52E127E1006A00E1563E /* Yummie */ = {
 			isa = PBXGroup;
 			children = (
+				D7DB52F827E1008A00E1563E /* Utils */,
+				D7DB52F627E1007D00E1563E /* Modules */,
+				D7DB52F927E1009000E1563E /* Storyboards */,
 				D7DB52E227E1006A00E1563E /* AppDelegate.swift */,
-				D7DB52E427E1006A00E1563E /* SceneDelegate.swift */,
-				D7DB52E627E1006A00E1563E /* ViewController.swift */,
-				D7DB52E827E1006A00E1563E /* Main.storyboard */,
-				D7DB52EB27E1006F00E1563E /* Assets.xcassets */,
-				D7DB52ED27E1006F00E1563E /* LaunchScreen.storyboard */,
-				D7DB52F027E1006F00E1563E /* Info.plist */,
+				D7DB52FA27E1012F00E1563E /* AppCoordinator.swift */,
+				D7DB52F727E1008500E1563E /* SupportFiles */,
 			);
 			path = Yummie;
+			sourceTree = "<group>";
+		};
+		D7DB52F627E1007D00E1563E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				AA505780DF89B4AEE432D54F /* Onboarding */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D7DB52F727E1008500E1563E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB52EB27E1006F00E1563E /* Assets.xcassets */,
+				D7DB52F027E1006F00E1563E /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		D7DB52F827E1008A00E1563E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB52FD27E1017200E1563E /* Views */,
+				D7DB52FC27E1016B00E1563E /* Extensions */,
+				D7DB52FE27E101A300E1563E /* Observable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D7DB52F927E1009000E1563E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB52E827E1006A00E1563E /* Main.storyboard */,
+				D7DB52ED27E1006F00E1563E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		D7DB52FC27E1016B00E1563E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB530027E10AD100E1563E /* UIView + Extensions.swift */,
+				D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D7DB52FD27E1017200E1563E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +209,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7DB52E727E1006A00E1563E /* ViewController.swift in Sources */,
+				D7DB530227E10AD100E1563E /* UIView + Extensions.swift in Sources */,
+				D7DB52FB27E1013000E1563E /* AppCoordinator.swift in Sources */,
+				D7DB52FF27E101A300E1563E /* Observable.swift in Sources */,
 				D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */,
-				D7DB52E527E1006A00E1563E /* SceneDelegate.swift in Sources */,
+				C2774A00D9EDECAF6A4A56DC /* OnboardingViewController.swift in Sources */,
+				CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */,
+				D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */,
+				C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +370,6 @@
 				INFOPLIST_FILE = Yummie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +397,6 @@
 				INFOPLIST_FILE = Yummie/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

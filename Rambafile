@@ -1,0 +1,30 @@
+### Headers settings
+company: matthews.co
+
+### Xcode project settings
+project_name: Yummie
+xcodeproj_path: Yummie.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: Yummie
+
+# The file path for new modules
+project_file_path: Yummie/Modules
+
+# The Xcode group path to new modules
+project_group_path: Yummie/Modules
+
+### Tests generation settings section
+# The tests target name
+test_target: Yummie
+
+# The file path for new tests
+test_file_path: Yummie/Tests
+
+# The Xcode group path to new tests
+test_group_path: Yummie/Tests
+
+### Templates
+templates:
+- {name: custom_mvvmc, local: '/Users/matthewsakhnenko/Documents/Projects/iOS-Projects/Portfolio/Yummie/custom_mvvmc'}
