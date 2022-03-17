@@ -1,14 +1,14 @@
 //
-//  Onboarding module - OnboardingCoordinator.swift
+//  Home module - HomeCoordinator.swift
 //  Yummie
 //
-//  Created by sakhnenkoff on 15/03/2022.
+//  Created by sakhnenkoff on 16/03/2022.
 //  Copyright © 2022 matthews.co. All rights reserved.
 //
 
 import UIKit
 
-final class OnboardingCoordinator: Coordinator {
+final class HomeCoordinator: Coordinator {
 	
 	var childCoordinators: [Coordinator] = []
    	var parentCoordinator: Coordinator?
@@ -25,25 +25,19 @@ final class OnboardingCoordinator: Coordinator {
     }
 
     func start() {
-        showOnboardingScreen()
+        showHomeScreen()
     }
 
     // MARK: - Actions
     
-    private func showOnboardingScreen() {
-        let onboardingVC: OnboardingViewController = .instantiate(storyboard: .main)
-        onboardingVC.viewModel = OnboardingViewModel()
-        navigationController.pushViewController(onboardingVC, animated: false)
+    private func showHomeScreen() {
+       // .viewModel = HomeViewModel()
+       // navigationController.pushViewController(VC, animated: false)
     }
     
     func childDidFinish(child: Child) {
     }
     
     //MARK: - ViewModel Output
-    
-    func didFinishOnboarding() {
-        UserDefaults.hasOnboarded = true
-        parentCoordinator?.childDidFinish(child: .onboarding(self))
-    }
     
 }

@@ -10,6 +10,7 @@
 		C2774A00D9EDECAF6A4A56DC /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283DE5BD7FFAE40F17A4CCA7 /* OnboardingViewController.swift */; };
 		C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */; };
 		CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */; };
+		D1545AA996B93721A79681DE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4698C3CEFEC9F29BA3ED8CB0 /* HomeViewModel.swift */; };
 		D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52E227E1006A00E1563E /* AppDelegate.swift */; };
 		D7DB52EA27E1006A00E1563E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52E827E1006A00E1563E /* Main.storyboard */; };
 		D7DB52EC27E1006F00E1563E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52EB27E1006F00E1563E /* Assets.xcassets */; };
@@ -18,10 +19,16 @@
 		D7DB52FF27E101A300E1563E /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52FE27E101A300E1563E /* Observable.swift */; };
 		D7DB530227E10AD100E1563E /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB530027E10AD100E1563E /* UIView + Extensions.swift */; };
 		D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */; };
+		D7DB530927E254E300E1563E /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB530827E254E300E1563E /* OnboardingCollectionViewCell.swift */; };
+		D7DB530F27E26C1C00E1563E /* UserDefaults + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB530E27E26C1C00E1563E /* UserDefaults + Extensions.swift */; };
+		E1A9F127720041593818C56A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA794A2E43989BEC60F62CF2 /* HomeViewController.swift */; };
+		EB3917007F50CD0F01DE774F /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4603CF425069177827DDFB64 /* HomeCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		283DE5BD7FFAE40F17A4CCA7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		4603CF425069177827DDFB64 /* HomeCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		4698C3CEFEC9F29BA3ED8CB0 /* HomeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		D7DB52DF27E1006A00E1563E /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +41,9 @@
 		D7DB52FE27E101A300E1563E /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		D7DB530027E10AD100E1563E /* UIView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController + Extensions.swift"; sourceTree = "<group>"; };
+		D7DB530827E254E300E1563E /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7DB530E27E26C1C00E1563E /* UserDefaults + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + Extensions.swift"; sourceTree = "<group>"; };
+		FA794A2E43989BEC60F62CF2 /* HomeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,9 +57,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A06FA51061E8CDCCCCE8383 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FA794A2E43989BEC60F62CF2 /* HomeViewController.swift */,
+				4698C3CEFEC9F29BA3ED8CB0 /* HomeViewModel.swift */,
+				4603CF425069177827DDFB64 /* HomeCoordinator.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		AA505780DF89B4AEE432D54F /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				D7DB530727E254C900E1563E /* Utils */,
 				283DE5BD7FFAE40F17A4CCA7 /* OnboardingViewController.swift */,
 				7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */,
 				6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */,
@@ -57,9 +78,17 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		D7D341F827E33AFB00E5C82D /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		D7DB52D627E1006A00E1563E = {
 			isa = PBXGroup;
 			children = (
+				D7D341F827E33AFB00E5C82D /* New Group */,
 				D7DB52E127E1006A00E1563E /* Yummie */,
 				D7DB52E027E1006A00E1563E /* Products */,
 			);
@@ -90,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				AA505780DF89B4AEE432D54F /* Onboarding */,
+				2A06FA51061E8CDCCCCE8383 /* Home */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -127,6 +157,7 @@
 			children = (
 				D7DB530027E10AD100E1563E /* UIView + Extensions.swift */,
 				D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */,
+				D7DB530E27E26C1C00E1563E /* UserDefaults + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -136,6 +167,14 @@
 			children = (
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		D7DB530727E254C900E1563E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D7DB530827E254E300E1563E /* OnboardingCollectionViewCell.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +256,11 @@
 				CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */,
 				D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */,
 				C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */,
+				D7DB530F27E26C1C00E1563E /* UserDefaults + Extensions.swift in Sources */,
+				D7DB530927E254E300E1563E /* OnboardingCollectionViewCell.swift in Sources */,
+				E1A9F127720041593818C56A /* HomeViewController.swift in Sources */,
+				D1545AA996B93721A79681DE /* HomeViewModel.swift in Sources */,
+				EB3917007F50CD0F01DE774F /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

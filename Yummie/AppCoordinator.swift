@@ -8,13 +8,19 @@
 import Foundation
 import UIKit
 
+enum Child {
+    case onboarding(Coordinator)
+    case home(Coordinator)
+}
+
 protocol Coordinator: AnyObject {
+    
     var childCoordinators: [Coordinator] { get }
     var parentCoordinator: Coordinator? { get }
     var rootViewController: UIViewController? { get }
     
     func start()
-    func childDidFinish(child: Coordinator)
+    func childDidFinish(child: Child)
 }
 
 final class AppCoordinator: Coordinator {
@@ -35,6 +41,9 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let navigationController = UINavigationController()
+        if !UserDefaults.hasOnboarded {
+            
+        }
         let onboardingCoordinator = OnboardingCoordinator(navigationController: navigationController)
         onboardingCoordinator.start()
         
@@ -42,7 +51,17 @@ final class AppCoordinator: Coordinator {
         window.makeKeyAndVisible()
     }
     
-    func childDidFinish(child: Coordinator) {
+    func childDidFinish(child: Child) {
+        var coordinator: Coordinator
+        
+        switch child {
+        case .onboarding(let cord):
+            coordinator = cord
+            UserDefaults.hasOnboarded = true
+        case .home(let cord):
+            coordinator = cord
+        }
+        childCoordinators.removeAll() { $0 === coordinator }
     }
     
 }
