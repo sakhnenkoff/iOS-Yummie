@@ -132,10 +132,10 @@
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="dUK-3B-HTf">
             <objects>
-                <viewController id="9yp-1N-2GY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeViewController" id="9yp-1N-2GY" customClass="HomeViewController" customModule="Yummie" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qSD-av-2Ch">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

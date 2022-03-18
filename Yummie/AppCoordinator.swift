@@ -41,11 +41,12 @@ final class AppCoordinator: Coordinator {
     
     func start() {
         let navigationController = UINavigationController()
+        
         if !UserDefaults.hasOnboarded {
-            
+            startOnboardingFlow(nav: navigationController)
+        } else {
+            startHomeFlow(nav: navigationController)
         }
-        let onboardingCoordinator = OnboardingCoordinator(navigationController: navigationController)
-        onboardingCoordinator.start()
         
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
@@ -58,10 +59,26 @@ final class AppCoordinator: Coordinator {
         case .onboarding(let cord):
             coordinator = cord
             UserDefaults.hasOnboarded = true
+            cord.rootViewController?.navigationController?.popViewController(animated: true)
+            start()
         case .home(let cord):
             coordinator = cord
         }
         childCoordinators.removeAll() { $0 === coordinator }
+    }
+    
+    //MARK: - Navigation
+    
+    func startHomeFlow(nav: UINavigationController) {
+        let homeCoordinator = HomeCoordinator(navigationController: nav)
+        homeCoordinator.parentCoordinator = self
+        homeCoordinator.start()
+    }
+    
+    func startOnboardingFlow(nav: UINavigationController) {
+        let onboardingCoordinator = OnboardingCoordinator(navigationController: nav)
+        onboardingCoordinator.parentCoordinator = self
+        onboardingCoordinator.start()
     }
     
 }

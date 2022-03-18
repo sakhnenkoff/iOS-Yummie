@@ -31,8 +31,9 @@ final class HomeCoordinator: Coordinator {
     // MARK: - Actions
     
     private func showHomeScreen() {
-       // .viewModel = HomeViewModel()
-       // navigationController.pushViewController(VC, animated: false)
+        let homeVC: HomeViewController = .instantiate(storyboard: .main)
+        homeVC.viewModel = HomeViewModel()
+        navigationController.pushViewController(homeVC, animated: false)
     }
     
     func childDidFinish(child: Child) {

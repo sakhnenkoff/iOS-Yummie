@@ -24,7 +24,7 @@ class HomeViewController: UIViewController {
     //MARK: - Configuration
     
     private func configure() {
-
+        view.backgroundColor = .orange
     }
 
     private func setupBindings() {

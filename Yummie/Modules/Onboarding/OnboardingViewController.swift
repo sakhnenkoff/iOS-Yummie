@@ -57,7 +57,10 @@ class OnboardingViewController: UIViewController {
     //MARK: - Actions
     
     @IBAction func didTapNextButton(_ sender: UIButton) {
-        guard currentPage != viewModel.slides.count - 1 else { return }
+        guard currentPage != viewModel.slides.count - 1 else {
+            viewModel.didFinishOnboarding()
+            return
+        }
         currentPage += 1
         let indexPath = IndexPath(item: currentPage, section: 0)
         collectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)

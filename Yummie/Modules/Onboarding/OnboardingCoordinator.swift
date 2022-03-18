@@ -33,6 +33,7 @@ final class OnboardingCoordinator: Coordinator {
     private func showOnboardingScreen() {
         let onboardingVC: OnboardingViewController = .instantiate(storyboard: .main)
         onboardingVC.viewModel = OnboardingViewModel()
+        onboardingVC.viewModel.coordinator = self
         navigationController.pushViewController(onboardingVC, animated: false)
     }
     
@@ -42,7 +43,6 @@ final class OnboardingCoordinator: Coordinator {
     //MARK: - ViewModel Output
     
     func didFinishOnboarding() {
-        UserDefaults.hasOnboarded = true
         parentCoordinator?.childDidFinish(child: .onboarding(self))
     }
     

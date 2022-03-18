@@ -27,7 +27,7 @@ class OnboardingViewModel {
 
     // MARK: - Inputs
     
-    weak var coordinator: OnboardingCoordinator?
+    var coordinator: OnboardingCoordinator?
     
     var slides = OnboardingSlide.slides
 
