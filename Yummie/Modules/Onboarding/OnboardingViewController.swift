@@ -19,7 +19,11 @@ class OnboardingViewController: UIViewController {
     weak var nextButton: UIButton!
     
     @IBOutlet
-    weak var pageControl: UIPageControl!
+    weak var pageControl: UIPageControl! {
+        didSet {
+            pageControl.numberOfPages = viewModel.slides.count
+        }
+    }
     
     var currentPage = 0 {
         didSet {

@@ -32,7 +32,8 @@ final class HomeCoordinator: Coordinator {
     
     private func showHomeScreen() {
         let homeVC: HomeViewController = .instantiate(storyboard: .main)
-        homeVC.viewModel = HomeViewModel()
+        homeVC.viewModel = HomeViewModel(networkService: AppNetworkingService())
+        
         navigationController.pushViewController(homeVC, animated: false)
     }
     

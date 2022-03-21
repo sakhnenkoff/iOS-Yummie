@@ -11,6 +11,12 @@
 		C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */; };
 		CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */; };
 		D1545AA996B93721A79681DE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4698C3CEFEC9F29BA3ED8CB0 /* HomeViewModel.swift */; };
+		D74EE02927E65CD0009E9BDD /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE02827E65CD0009E9BDD /* CategoryCollectionViewCell.swift */; };
+		D74EE02C27E77DDB009E9BDD /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE02B27E77DDB009E9BDD /* DishCategory.swift */; };
+		D74EE02F27E77F07009E9BDD /* Nuke in Frameworks */ = {isa = PBXBuildFile; productRef = D74EE02E27E77F07009E9BDD /* Nuke */; };
+		D74EE03127E77F85009E9BDD /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03027E77F85009E9BDD /* String + Extensions.swift */; };
+		D74EE03327E7803A009E9BDD /* Nuke + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */; };
+		D74EE03627E783A7009E9BDD /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03527E783A7009E9BDD /* NetworkingService.swift */; };
 		D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52E227E1006A00E1563E /* AppDelegate.swift */; };
 		D7DB52EA27E1006A00E1563E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52E827E1006A00E1563E /* Main.storyboard */; };
 		D7DB52EC27E1006F00E1563E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52EB27E1006F00E1563E /* Assets.xcassets */; };
@@ -31,6 +37,11 @@
 		4698C3CEFEC9F29BA3ED8CB0 /* HomeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingCoordinator.swift; sourceTree = "<group>"; };
 		7F4C951D527DF70849091B9F /* OnboardingViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		D74EE02827E65CD0009E9BDD /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		D74EE02B27E77DDB009E9BDD /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		D74EE03027E77F85009E9BDD /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
+		D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke + Extensions.swift"; sourceTree = "<group>"; };
+		D74EE03527E783A7009E9BDD /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		D7DB52DF27E1006A00E1563E /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DB52E227E1006A00E1563E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DB52E927E1006A00E1563E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D74EE02F27E77F07009E9BDD /* Nuke in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +72,7 @@
 		2A06FA51061E8CDCCCCE8383 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				D74EE02727E65C79009E9BDD /* Utils */,
 				FA794A2E43989BEC60F62CF2 /* HomeViewController.swift */,
 				4698C3CEFEC9F29BA3ED8CB0 /* HomeViewModel.swift */,
 				4603CF425069177827DDFB64 /* HomeCoordinator.swift */,
@@ -76,6 +89,30 @@
 				6DDDF189D9E1FC5955153F62 /* OnboardingCoordinator.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		D74EE02727E65C79009E9BDD /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D74EE02827E65CD0009E9BDD /* CategoryCollectionViewCell.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D74EE02A27E77DCA009E9BDD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D74EE02B27E77DDB009E9BDD /* DishCategory.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D74EE03427E78398009E9BDD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D74EE03527E783A7009E9BDD /* NetworkingService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		D7D341F827E33AFB00E5C82D /* New Group */ = {
@@ -136,6 +173,8 @@
 		D7DB52F827E1008A00E1563E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D74EE03427E78398009E9BDD /* Services */,
+				D74EE02A27E77DCA009E9BDD /* Models */,
 				D7DB52FD27E1017200E1563E /* Views */,
 				D7DB52FC27E1016B00E1563E /* Extensions */,
 				D7DB52FE27E101A300E1563E /* Observable.swift */,
@@ -158,6 +197,8 @@
 				D7DB530027E10AD100E1563E /* UIView + Extensions.swift */,
 				D7DB530127E10AD100E1563E /* UIViewController + Extensions.swift */,
 				D7DB530E27E26C1C00E1563E /* UserDefaults + Extensions.swift */,
+				D74EE03027E77F85009E9BDD /* String + Extensions.swift */,
+				D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,6 +234,9 @@
 			dependencies = (
 			);
 			name = Yummie;
+			packageProductDependencies = (
+				D74EE02E27E77F07009E9BDD /* Nuke */,
+			);
 			productName = Yummie;
 			productReference = D7DB52DF27E1006A00E1563E /* Yummie.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +265,9 @@
 				Base,
 			);
 			mainGroup = D7DB52D627E1006A00E1563E;
+			packageReferences = (
+				D74EE02D27E77F07009E9BDD /* XCRemoteSwiftPackageReference "Nuke" */,
+			);
 			productRefGroup = D7DB52E027E1006A00E1563E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -249,17 +296,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7DB530227E10AD100E1563E /* UIView + Extensions.swift in Sources */,
+				D74EE02C27E77DDB009E9BDD /* DishCategory.swift in Sources */,
 				D7DB52FB27E1013000E1563E /* AppCoordinator.swift in Sources */,
+				D74EE03627E783A7009E9BDD /* NetworkingService.swift in Sources */,
 				D7DB52FF27E101A300E1563E /* Observable.swift in Sources */,
 				D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */,
 				C2774A00D9EDECAF6A4A56DC /* OnboardingViewController.swift in Sources */,
 				CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */,
+				D74EE03127E77F85009E9BDD /* String + Extensions.swift in Sources */,
+				D74EE03327E7803A009E9BDD /* Nuke + Extensions.swift in Sources */,
 				D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */,
 				C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */,
 				D7DB530F27E26C1C00E1563E /* UserDefaults + Extensions.swift in Sources */,
 				D7DB530927E254E300E1563E /* OnboardingCollectionViewCell.swift in Sources */,
 				E1A9F127720041593818C56A /* HomeViewController.swift in Sources */,
 				D1545AA996B93721A79681DE /* HomeViewModel.swift in Sources */,
+				D74EE02927E65CD0009E9BDD /* CategoryCollectionViewCell.swift in Sources */,
 				EB3917007F50CD0F01DE774F /* HomeCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -478,6 +530,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D74EE02D27E77F07009E9BDD /* XCRemoteSwiftPackageReference "Nuke" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kean/Nuke";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D74EE02E27E77F07009E9BDD /* Nuke */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D74EE02D27E77F07009E9BDD /* XCRemoteSwiftPackageReference "Nuke" */;
+			productName = Nuke;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D7DB52D727E1006A00E1563E /* Project object */;
 }
