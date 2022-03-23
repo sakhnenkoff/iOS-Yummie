@@ -17,6 +17,9 @@
 		D74EE03127E77F85009E9BDD /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03027E77F85009E9BDD /* String + Extensions.swift */; };
 		D74EE03327E7803A009E9BDD /* Nuke + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */; };
 		D74EE03627E783A7009E9BDD /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03527E783A7009E9BDD /* NetworkingService.swift */; };
+		D7ADB0EE27EB417C005210AC /* CardShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB0ED27EB417C005210AC /* CardShadowView.swift */; };
+		D7ADB0F027EB4F99005210AC /* BigDishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB0EF27EB4F99005210AC /* BigDishCollectionViewCell.swift */; };
+		D7ADB0F227EB9F59005210AC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB0F127EB9F59005210AC /* Dish.swift */; };
 		D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DB52E227E1006A00E1563E /* AppDelegate.swift */; };
 		D7DB52EA27E1006A00E1563E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52E827E1006A00E1563E /* Main.storyboard */; };
 		D7DB52EC27E1006F00E1563E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7DB52EB27E1006F00E1563E /* Assets.xcassets */; };
@@ -42,6 +45,9 @@
 		D74EE03027E77F85009E9BDD /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke + Extensions.swift"; sourceTree = "<group>"; };
 		D74EE03527E783A7009E9BDD /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		D7ADB0ED27EB417C005210AC /* CardShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShadowView.swift; sourceTree = "<group>"; };
+		D7ADB0EF27EB4F99005210AC /* BigDishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDishCollectionViewCell.swift; sourceTree = "<group>"; };
+		D7ADB0F127EB9F59005210AC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dish.swift; path = ../../../../../../../../Downloads/Dish.swift; sourceTree = "<group>"; };
 		D7DB52DF27E1006A00E1563E /* Yummie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yummie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7DB52E227E1006A00E1563E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7DB52E927E1006A00E1563E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				D74EE02827E65CD0009E9BDD /* CategoryCollectionViewCell.swift */,
+				D7ADB0EF27EB4F99005210AC /* BigDishCollectionViewCell.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -103,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D74EE02B27E77DDB009E9BDD /* DishCategory.swift */,
+				D7ADB0F127EB9F59005210AC /* Dish.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +214,7 @@
 		D7DB52FD27E1017200E1563E /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D7ADB0ED27EB417C005210AC /* CardShadowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,7 +311,9 @@
 				D7DB52FF27E101A300E1563E /* Observable.swift in Sources */,
 				D7DB52E327E1006A00E1563E /* AppDelegate.swift in Sources */,
 				C2774A00D9EDECAF6A4A56DC /* OnboardingViewController.swift in Sources */,
+				D7ADB0EE27EB417C005210AC /* CardShadowView.swift in Sources */,
 				CB0670A59604E3C634EB6B9D /* OnboardingViewModel.swift in Sources */,
+				D7ADB0F227EB9F59005210AC /* Dish.swift in Sources */,
 				D74EE03127E77F85009E9BDD /* String + Extensions.swift in Sources */,
 				D74EE03327E7803A009E9BDD /* Nuke + Extensions.swift in Sources */,
 				D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */,
@@ -313,6 +324,7 @@
 				D1545AA996B93721A79681DE /* HomeViewModel.swift in Sources */,
 				D74EE02927E65CD0009E9BDD /* CategoryCollectionViewCell.swift in Sources */,
 				EB3917007F50CD0F01DE774F /* HomeCoordinator.swift in Sources */,
+				D7ADB0F027EB4F99005210AC /* BigDishCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreAudio
+import CoreMedia
 
 class HomeViewController: UIViewController {
     
@@ -15,12 +16,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet
     weak var foodCategoryCollectionView:
-    UICollectionView! {
-        didSet {
-            foodCategoryCollectionView.delegate = self
-            foodCategoryCollectionView.dataSource = self
-        }
-    }
+    UICollectionView!
+    
+    @IBOutlet
+    weak var popularCollectionView: UICollectionView!
     
     //MARK: - LifeCycle
 
@@ -36,31 +35,62 @@ class HomeViewController: UIViewController {
     private func configure() {
         title = viewModel.title
         
+        configureCollections()
+    }
+    
+    private func configureCollections() {
+        [foodCategoryCollectionView,popularCollectionView].forEach() {
+            $0?.delegate = self
+            $0?.dataSource = self
+        }
     }
 
     private func setupBindings() {
         viewModel.categories.bind { [weak self] _ in
-            self?.reloadData()
+            DispatchQueue.main.async {
+                self?.reloadData()
+            }
+        }
+        
+        viewModel.dishes.bind { [weak self] _ in
+            DispatchQueue.main.async {
+                self?.reloadData()
+            }
         }
     }
     
     private func reloadData() {
-        foodCategoryCollectionView.reloadData()
+        [foodCategoryCollectionView,popularCollectionView].forEach() {
+            $0?.reloadData()
+        }
     }
-
+    
 }
+
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.categories.value?.count ?? 0
+        switch collectionView {
+        case foodCategoryCollectionView:
+            return viewModel.categories.value?.count ?? 0
+        case popularCollectionView:
+            return viewModel.dishes.value?.count ?? 0
+        default: return 0
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CategoryCollectionViewCell.self), for: indexPath) as! CategoryCollectionViewCell
-            guard let data = viewModel.categories.value else { fatalError() }
+        switch collectionView {
+        case foodCategoryCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: CategoryCollectionViewCell.self), for: indexPath) as! CategoryCollectionViewCell
+            cell.configure(with: viewModel.categories.value?[indexPath.item])
+            return cell
+        case popularCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BigDishCollectionViewCell.self), for: indexPath) as! BigDishCollectionViewCell
+            cell.configure(with: viewModel.dishes.value?[indexPath.item])
+            return cell
+        default: fatalError()
+        }
         
-        cell.configure(with: data[indexPath.row])
-
-        return cell
     }
 }

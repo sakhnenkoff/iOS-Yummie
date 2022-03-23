@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct DishCategory {
-    let id: String
-    let name: String
-    let imageString: String
+struct DishCategory: Codable {
+    let id: String?
+    let name: String?
+    let imageString: String?
 }
