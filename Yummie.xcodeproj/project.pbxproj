@@ -17,6 +17,7 @@
 		D74EE03127E77F85009E9BDD /* String + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03027E77F85009E9BDD /* String + Extensions.swift */; };
 		D74EE03327E7803A009E9BDD /* Nuke + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */; };
 		D74EE03627E783A7009E9BDD /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74EE03527E783A7009E9BDD /* NetworkingService.swift */; };
+		D78CC8AA27ECB71D000C3F20 /* LandscapeDishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D78CC8A927ECB71D000C3F20 /* LandscapeDishCollectionViewCell.swift */; };
 		D7ADB0EE27EB417C005210AC /* CardShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB0ED27EB417C005210AC /* CardShadowView.swift */; };
 		D7ADB0F027EB4F99005210AC /* BigDishCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB0EF27EB4F99005210AC /* BigDishCollectionViewCell.swift */; };
 		D7ADB0F227EB9F59005210AC /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7ADB0F127EB9F59005210AC /* Dish.swift */; };
@@ -45,6 +46,7 @@
 		D74EE03027E77F85009E9BDD /* String + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String + Extensions.swift"; sourceTree = "<group>"; };
 		D74EE03227E7803A009E9BDD /* Nuke + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nuke + Extensions.swift"; sourceTree = "<group>"; };
 		D74EE03527E783A7009E9BDD /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		D78CC8A927ECB71D000C3F20 /* LandscapeDishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeDishCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7ADB0ED27EB417C005210AC /* CardShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardShadowView.swift; sourceTree = "<group>"; };
 		D7ADB0EF27EB4F99005210AC /* BigDishCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BigDishCollectionViewCell.swift; sourceTree = "<group>"; };
 		D7ADB0F127EB9F59005210AC /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dish.swift; path = ../../../../../../../../Downloads/Dish.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			children = (
 				D74EE02827E65CD0009E9BDD /* CategoryCollectionViewCell.swift */,
 				D7ADB0EF27EB4F99005210AC /* BigDishCollectionViewCell.swift */,
+				D78CC8A927ECB71D000C3F20 /* LandscapeDishCollectionViewCell.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				D7ADB0F227EB9F59005210AC /* Dish.swift in Sources */,
 				D74EE03127E77F85009E9BDD /* String + Extensions.swift in Sources */,
 				D74EE03327E7803A009E9BDD /* Nuke + Extensions.swift in Sources */,
+				D78CC8AA27ECB71D000C3F20 /* LandscapeDishCollectionViewCell.swift in Sources */,
 				D7DB530327E10AD100E1563E /* UIViewController + Extensions.swift in Sources */,
 				C6A4AFD8F3A736777B48CB7E /* OnboardingCoordinator.swift in Sources */,
 				D7DB530F27E26C1C00E1563E /* UserDefaults + Extensions.swift in Sources */,

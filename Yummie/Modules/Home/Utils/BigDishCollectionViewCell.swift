@@ -31,14 +31,18 @@ class BigDishCollectionViewCell: UICollectionViewCell {
     private func configure() {
     }
     
+    override func layoutSubviews() {
+        dishImageView.layer.cornerRadius = 5
+        dishImageView.clipsToBounds = true
+    }
+    
     //MARK: - Public
     
     func configure(with dish: Dish?) {
         dishLabel.text = dish?.name
         dishCaloriesLabel.text = dish?.formattedCalories
         dishDescriptionLabel.text = dish?.description
-        Nuke.loadImage(with: dish?.imageString?.asUrl, options: .appDefaultOptions, into: dishImageView) { _ in
-        }
+        Nuke.loadImage(with: dish?.imageString, into: dishImageView)
         
     }
 }

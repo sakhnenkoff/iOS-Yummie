@@ -21,6 +21,9 @@ class HomeViewController: UIViewController {
     @IBOutlet
     weak var popularCollectionView: UICollectionView!
     
+    @IBOutlet
+    weak var specialCollectionView: UICollectionView!
+    
     //MARK: - LifeCycle
 
     override func viewDidLoad() {
@@ -39,7 +42,7 @@ class HomeViewController: UIViewController {
     }
     
     private func configureCollections() {
-        [foodCategoryCollectionView,popularCollectionView].forEach() {
+        [foodCategoryCollectionView,popularCollectionView,specialCollectionView].forEach() {
             $0?.delegate = self
             $0?.dataSource = self
         }
@@ -60,7 +63,7 @@ class HomeViewController: UIViewController {
     }
     
     private func reloadData() {
-        [foodCategoryCollectionView,popularCollectionView].forEach() {
+        [specialCollectionView,foodCategoryCollectionView,popularCollectionView].forEach() {
             $0?.reloadData()
         }
     }
@@ -75,6 +78,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return viewModel.categories.value?.count ?? 0
         case popularCollectionView:
             return viewModel.dishes.value?.count ?? 0
+        case specialCollectionView:
+            return viewModel.dishes.value?.count ?? 0
         default: return 0
         }
     }
@@ -87,6 +92,10 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         case popularCollectionView:
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: BigDishCollectionViewCell.self), for: indexPath) as! BigDishCollectionViewCell
+            cell.configure(with: viewModel.dishes.value?[indexPath.item])
+            return cell
+        case specialCollectionView:
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: String(describing: LandscapeDishCollectionViewCell.self), for: indexPath) as! LandscapeDishCollectionViewCell
             cell.configure(with: viewModel.dishes.value?[indexPath.item])
             return cell
         default: fatalError()

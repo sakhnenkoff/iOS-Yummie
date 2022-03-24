@@ -25,10 +25,10 @@ class HomeViewModel {
     ])
     
     var dishes: Observable<[Dish]> = .init([
-        .init(id: "id1", name: "Some dish 1", description: "Some text", imageString: "https://picsum.photos/300/500", caloris: 20.5),
-        .init(id: "id1", name: "Some dish 2", description: "Some text", imageString: "https://picsum.photos/300/500", caloris: 20.5),
-        .init(id: "id1", name: "Some dish 3", description: "Some text", imageString: "https://picsum.photos/300/500", caloris: 20.5),
-        .init(id: "id1", name: "Some dish 4", description: "Some text", imageString: "https://picsum.photos/300/500", caloris: 20.5),
+        .init(id: "id1", name: "Some dish 1", description: "Some text", imageString: "https://picsum.photos/170/230", calories: 40),
+        .init(id: "id1", name: "Some dish 2", description: "Some text", imageString: "https://picsum.photos/170/230", calories: 22),
+        .init(id: "id1", name: "Some dish 3", description: "Some text", imageString: "https://picsum.photos/170/230", calories: 21),
+        .init(id: "id1", name: "Some dish 4", description: "Some text", imageString: "https://picsum.photos/170/230", calories: 20),
     ])
 
     func viewDidLoad() {

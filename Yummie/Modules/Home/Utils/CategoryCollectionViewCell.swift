@@ -35,7 +35,6 @@ class CategoryCollectionViewCell: UICollectionViewCell {
     
     func configure(with category: DishCategory?) {
         categoryLabel.text = category?.name
-        Nuke.loadImage(with: category?.imageString?.asUrl, options: .appDefaultOptions, into: categoryImageView) { _ in
-        }
+        Nuke.loadImage(with: category?.imageString, into: categoryImageView)
     }
 }
