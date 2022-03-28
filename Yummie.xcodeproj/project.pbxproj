@@ -128,17 +128,9 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		D7D341F827E33AFB00E5C82D /* New Group */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "New Group";
-			sourceTree = "<group>";
-		};
 		D7DB52D627E1006A00E1563E = {
 			isa = PBXGroup;
 			children = (
-				D7D341F827E33AFB00E5C82D /* New Group */,
 				D7DB52E127E1006A00E1563E /* Yummie */,
 				D7DB52E027E1006A00E1563E /* Products */,
 			);
