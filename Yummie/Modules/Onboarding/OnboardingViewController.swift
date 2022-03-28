@@ -55,7 +55,6 @@ class OnboardingViewController: UIViewController {
     }
 
     private func setupBindings() {
-
     }
     
     //MARK: - Actions

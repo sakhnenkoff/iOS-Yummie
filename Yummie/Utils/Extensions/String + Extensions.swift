@@ -2,7 +2,7 @@
 //  String + Extensions.swift
 //  Yummie
 //
-//  Created by Matthew Sakhnenko on 20.03.2022.
+//  Created by Matthew Sakhnenko on 27.03.2022.
 //
 
 import Foundation

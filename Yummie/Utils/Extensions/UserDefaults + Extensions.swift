@@ -28,6 +28,13 @@ struct UserDefault<Value> {
     }
 }
 
+extension UserDefault where Value == Bool {
+    func toggle() {
+        var bool = wrappedValue as Bool
+        container.set(bool.toggle(), forKey: key.rawValue)
+    }
+}
+
 extension UserDefaults {
     @UserDefault(key: .hasOnboarded, defaultValue: false) static var hasOnboarded: Bool
 }

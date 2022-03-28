@@ -34,10 +34,16 @@ final class HomeCoordinator: Coordinator {
         let homeVC: HomeViewController = .instantiate(storyboard: .main)
         homeVC.viewModel = HomeViewModel(networkService: AppNetworkingService())
         
+        let transition = CATransition()
+        transition.duration = 0.5
+        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        transition.type = .fade
+        navigationController.view.layer.add(transition, forKey: nil)
+        
         navigationController.pushViewController(homeVC, animated: false)
     }
     
-    func childDidFinish(child: Child) {
+    func childDidFinish(child: ChildCoordinator) {
     }
     
     //MARK: - ViewModel Output

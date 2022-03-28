@@ -37,7 +37,7 @@ final class OnboardingCoordinator: Coordinator {
         navigationController.pushViewController(onboardingVC, animated: false)
     }
     
-    func childDidFinish(child: Child) {
+    func childDidFinish(child: ChildCoordinator) {
     }
     
     //MARK: - ViewModel Output

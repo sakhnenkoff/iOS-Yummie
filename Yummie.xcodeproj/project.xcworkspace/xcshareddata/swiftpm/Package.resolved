@@ -8,6 +8,15 @@
         "branch" : "master",
         "revision" : "04953e2cde7022574fda9e91d7cbe9232259bc15"
       }
+    },
+    {
+      "identity" : "uiwindowtransitions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/malcommac/UIWindowTransitions.git",
+      "state" : {
+        "revision" : "9fae35fc44e2742cb12f640afbad6111355bda85",
+        "version" : "1.0.0"
+      }
     }
   ],
   "version" : 2

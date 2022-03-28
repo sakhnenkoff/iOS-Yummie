@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewModel {
     
-    let title = "Yummie"
+    let title: String? = "Yummie"
         
     weak var coordinator: Coordinator?
     
