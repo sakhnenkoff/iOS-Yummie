@@ -32,14 +32,7 @@ final class HomeCoordinator: Coordinator {
     
     private func showHomeScreen() {
         let homeVC: HomeViewController = .instantiate(storyboard: .main)
-        homeVC.viewModel = HomeViewModel(networkService: AppNetworkingService())
-        
-        let transition = CATransition()
-        transition.duration = 0.5
-        transition.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        transition.type = .fade
-        navigationController.view.layer.add(transition, forKey: nil)
-        
+        homeVC.viewModel = HomeViewModel(networkService: AppNetworkingService())                
         navigationController.pushViewController(homeVC, animated: false)
     }
     
