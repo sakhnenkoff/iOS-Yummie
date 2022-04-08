@@ -7,12 +7,13 @@
 //
 
 import UIKit
+import CoreMIDI
 
 class HomeViewModel {
     
     let title: String? = "Yummie"
         
-    weak var coordinator: Coordinator?
+    var coordinator: (Coordinator & HomeCoordinating)?
     
     let networkService: NetworkingServicing
     
@@ -48,6 +49,15 @@ class HomeViewModel {
     
     // MARK: - Outputs
     
+    func didSelectDish(at indexPath: IndexPath) {
+        if let dish = dishes.value?[indexPath.row] {
+            coordinator?.coordinateToDetail(with: dish)
+        }
+    }
     
+    func didSelectCategoryList(category: DishCategory?, dishes: [Dish]?) {
+        guard let category = category, let dishes = dishes else { return }
+        coordinator?.coordinateToCategoryList(with: category, dishes: dishes)
+    }
 
 }

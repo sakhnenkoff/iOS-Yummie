@@ -9,11 +9,6 @@ import Foundation
 import UIWindowTransitions
 import UIKit
 
-enum ChildCoordinator {
-    case onboarding(Coordinator)
-    case home(Coordinator)
-}
-
 protocol Coordinator: AnyObject {
     var childCoordinators: [Coordinator] { get }
     var parentCoordinator: Coordinator? { get }
@@ -21,6 +16,11 @@ protocol Coordinator: AnyObject {
     
     func start()
     func childDidFinish(child: ChildCoordinator)
+}
+
+enum ChildCoordinator {
+    case onboarding(Coordinator)
+    case home(Coordinator)
 }
 
 final class AppCoordinator: Coordinator {
@@ -37,8 +37,6 @@ final class AppCoordinator: Coordinator {
     
     init(window: UIWindow) {
         self.window = window
-        
-        window.backgroundColor = .white
     }
     
     func start() {

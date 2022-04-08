@@ -9,6 +9,7 @@
 import UIKit
 import CoreAudio
 import CoreMedia
+import SwiftUI
 
 class HomeViewController: UIViewController {
     
@@ -100,6 +101,13 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             return cell
         default: fatalError()
         }
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView == foodCategoryCollectionView {
+            viewModel.didSelectCategoryList(category: viewModel.categories.value?[indexPath.row], dishes: viewModel.dishes.value)
+        } else {
+            viewModel.didSelectDish(at: indexPath)
+        }
     }
 }
